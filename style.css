@@ -1,0 +1,84 @@
+.page {
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: "Inter", sans-serif;
+
+  background-color: #2a2c2f;
+}
+
+.haeder {
+  display: grid;
+  justify-items: space-between;
+}
+.logo {
+}
+.logo_place_header {
+  height: 52px;
+  width: 176px;
+  left: 48px;
+  top: 20px;
+  border-radius: 0px;
+}
+.haeder__lang-link-ru {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: right;
+  text-decoration-line: underline;
+  color: #ffffff;
+  width: 30px;
+  height: 28px;
+}
+.haeder__lang-link-en {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: right;
+  color: #ffffff;
+  width: 29px;
+  height: 28px;
+}
+.lead__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 100px;
+  width: 720px;
+  height: 200px;
+  text-align: center;
+  color: #ffffff;
+}
+.lead__subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  width: 640px;
+  height: 72px;
+}
+.lead__image {
+  width: 984px;
+  height: 615px;
+}
+.lead__caption {
+  width: 158px;
+  height: 14px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
