@@ -1,53 +1,62 @@
 .page {
-  min-width: 1100px;
+  /* min-width: 1100px; */
   /* мы ещё не умеем делать мобильную версию сайта, */
   /* поэтому выше установлена минимальная ширина страницы */
-  max-width: 1600px;
+  max-width: 1280px;
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: "Inter", sans-serif;
 
   background-color: #2a2c2f;
+  color: #ffffff;
 }
 
 .haeder {
-  display: grid;
+  margin: 0;
+  display: flex;
   justify-items: space-between;
+  align-items: center;
 }
 .logo {
 }
 .logo_place_header {
+  margin: 0;
   height: 52px;
   width: 176px;
   left: 48px;
   top: 20px;
   border-radius: 0px;
 }
+.menu {
+  margin: 0;
+}
 .haeder__lang-link-ru {
+  margin: 0;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
   text-align: right;
   text-decoration-line: underline;
-  color: #ffffff;
   width: 30px;
   height: 28px;
+  color: #ffffff;
 }
 .haeder__lang-link-en {
+  margin: 0;
   text-decoration: none;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
   text-align: right;
-  color: #ffffff;
   width: 29px;
   height: 28px;
+  color: #ffffff;
 }
 .lead__title {
-  font-family: "Inter";
+  margin: 0;
   font-style: normal;
   font-weight: 900;
   font-size: 96px;
@@ -55,23 +64,24 @@
   width: 720px;
   height: 200px;
   text-align: center;
-  color: #ffffff;
 }
 .lead__subtitle {
+  margin: 0;
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
-  color: #ffffff;
   width: 640px;
   height: 72px;
 }
 .lead__image {
+  margin: 0;
   width: 984px;
   height: 615px;
 }
 .lead__caption {
+  margin: 0;
   width: 158px;
   height: 14px;
   font-style: normal;
@@ -80,5 +90,107 @@
   line-height: 14px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
+}
+.section {
+  margin: 0;
+}
+.intro {
+  margin: 0;
+}
+.intro__title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 58px;
+}
+.intro__text {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 163%;
+}
+.intro__list {
+  margin: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  list-style-type: none;
+}
+.photo-grid {
+  margin: 0;
+  display: grid;
+}
+.cards {
+  margin: 0;
+}
+.cards__item {
+  margin: 0;
+  list-style-type: none;
+}
+.cards__image {
+  margin: 0;
+}
+.places {
+  margin: 0;
+}
+.place {
+  margin: 0;
+  list-style-type: none;
+}
+.place__title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+}
+.place__image {
+  margin: 0;
+}
+.place__website {
+  margin: 0;
+}
+.place__url-heading {
+  margin: 0;
+}
+.place__link {
+  margin: 0;
+  text-decoration: none;
   color: #ffffff;
+}
+.place__paragraph {
+  margin: 0;
+}
+.cover {
+  margin: 0;
+}
+.cover__title {
+  margin: 0;
+}
+.cover__subtitle {
+  margin: 0;
+}
+.cover__overlay {
+  margin: 0;
+}
+.cover__background {
+  margin: 0;
+}
+.footer__links {
+  margin: 0;
+  color: #ffffff;
+}
+.footer__link {
+  margin: 0;
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer__copyright {
+  margin: 0;
+}
+.footer__author {
+  margin: 0;
 }
