@@ -1,0 +1,10 @@
+.cover__background {
+  position: relative;
+  margin: 0;
+  max-width: 1184px;
+  min-height: 740px;
+  margin: 0 auto;
+}
+.cover__background:hover .cover__overlay {
+  opacity: 0.5;
+}
