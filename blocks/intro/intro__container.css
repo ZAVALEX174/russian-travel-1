@@ -1,0 +1,11 @@
+.intro__container {
+  /*++*/
+  /* margin: 0; */
+  padding-left: 0;
+  max-width: 984px;
+  box-sizing: border-box;
+  padding-right: 293px;
+  padding-top: 92px;
+  background-size: contain;
+  text-align: left;
+}
