@@ -1,2 +1,517 @@
-@import url(./normolize.css);
+@import url(../blocks/vendor/normolize.css);
+@import url(../blocks/page/page.css);
 
+@import url(../font/font.css);
+
+@import url(../blocks/container/container.css);
+
+@import url(../blocks/section/section.css);
+
+@import url(../blocks/cards/cards.css);
+@import url(../blocks/cards/__image/cards__image.css);
+@import url(../blocks/cards/__item/cards__item.css);
+
+@import url(../blocks/cover/cover.css);
+@import url(../blocks/cover/__title/cover__title.css);
+@import url(../blocks/cover/__subtitle/cover__subtitle.css);
+@import url(../blocks/cover/__text/cover__text.css);
+@import url(../blocks/cover/__container/cover__container.css);
+@import url(../blocks/cover/__background/cover__background.css);
+@import url(../blocks/cover/__link/cover__link.css);
+@import url(../blocks/cover/__overlay/cover__overlay.css);
+
+@import url(../blocks/footer/__author/footer__author.css);
+@import url(../blocks/footer/__container/footer__container.css);
+@import url(../blocks/footer/__copyright/footer__copyright.css);
+@import url(../blocks/footer/__links/__link/footer__link.css);
+@import url(../blocks/footer/__links/footer__links.css);
+
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__container/header__container.css);
+@import url(../blocks/header/__language-link/header__language-link.css);
+@import url(../blocks/header/__language-link/header__language-link_active.css);
+
+@import url(../blocks/intro/intro__container.css);
+@import url(../blocks/intro/__list/intro__list.css);
+@import url(../blocks/intro/__numb/intro__numb.css);
+@import url(../blocks/intro/__text/intro__text.css);
+@import url(../blocks/intro/__title/intro__title.css);
+
+@import url(../blocks/lead/__caption/lead__caption.css);
+@import url(../blocks/lead/__container/lead__container.css);
+@import url(../blocks/lead/__image/lead__image.css);
+@import url(../blocks/lead/__subtitle/lead__subtitle.css);
+@import url(../blocks/lead/__title/lead__title.css);
+
+@import url(../blocks/logo_place_header/logo_place_header.css);
+
+@import url(../blocks/photo-grid/photo-grid__container.css);
+
+@import url(../blocks/place/place.css);
+@import url(../blocks/place/__container/places__container.css);
+@import url(../blocks/place/__content/place__content.css);
+@import url(../blocks/place/__image/place__image.css);
+@import url(../blocks/place/__paragraph/place__paragraph.css);
+@import url(../blocks/place/__title/place__title.css);
+@import url(../blocks/place/__website/place__website.css);
+@import url(../blocks/place/__website/__link/place__link.css);
+@import url(../blocks/place/__website/__url-heading/place__url-heading.css);
+
+@media screen and (max-width: 1280px) {
+  .cover__overlay {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 928px;
+  }
+
+  .header__container {
+    padding-top: 28px;
+    padding-bottom: 48px;
+  }
+
+  .lead__container {
+    max-width: 928px;
+  }
+
+  .lead__subtitle {
+    margin-bottom: 56px;
+  }
+
+  .intro__container {
+    padding-left: 0px;
+    padding-right: 234px;
+  }
+
+  .cards {
+    overflow: hidden;
+    grid-template-rows: repeat(4, 225px);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+
+  .cards__image {
+    height: 100%;
+    width: auto;
+  }
+
+  .place {
+    grid-template-columns: 440px auto;
+    gap: 48px 32px;
+  }
+
+  .cover__background {
+    width: 100%;
+    min-height: 640px;
+  }
+
+  .cover__container {
+    overflow: hidden;
+    padding-left: 0;
+    padding-right: 0px;
+    max-width: 1024px;
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .lead__container {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 768px;
+  }
+
+  .lead__caption {
+    padding-left: 24px;
+    padding-top: 8px;
+  }
+
+  .lead__subtitle {
+    margin: 0 auto;
+    padding-bottom: 56px;
+  }
+
+  .lead__image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .intro__container {
+    padding-top: 88px;
+    max-width: 720px;
+    padding-right: 0px;
+  }
+
+  .photo-grid__container {
+    padding-top: 88px;
+  }
+
+  .cards {
+    grid-template-rows: repeat(6, 264px);
+    grid-template-columns: repeat(2, 352px);
+    gap: 16px;
+  }
+
+  .places__container {
+    padding-top: 63px;
+  }
+
+  .place {
+    grid-template-columns: 340px auto;
+    gap: 45px 28px;
+  }
+
+  .place__title {
+    margin: 0;
+    padding: 0;
+    padding-top: 25px;
+    padding-right: 10px;
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  .place__url-heading {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .place__paragraph {
+    padding-bottom: 25px;
+    font-size: 16px;
+    line-height: 162%;
+  }
+
+  .cover__container {
+    max-width: 768px;
+    padding-top: 90px;
+    padding-bottom: 88px;
+  }
+
+  .cover__background {
+    max-width: 768px;
+    min-height: 480px;
+  }
+
+
+
+@media screen and (max-width: 600px) {
+  .page {
+    display: block;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+
+  .header {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .header__container {
+    max-width: 288px;
+    padding: 0;
+    padding-top: 16px;
+    padding-bottom: 48px;
+    min-height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .logo_place_header {
+    min-height: 42px;
+    max-width: 142px;
+    left: 0px;
+    top: 20px;
+    border-radius: 0px;
+  }
+
+  .header__language-link {
+    margin: 0;
+    padding: 0;
+    margin-right: 18px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: right;
+    text-decoration-line: none;
+    max-width: 22px;
+    min-height: 20px;
+  }
+
+  .header__language-link_active {
+    text-decoration-line: underline;
+  }
+
+  .header__language-link:last-child {
+    margin-right: 0;
+  }
+
+  .lead__container {
+    max-width: 320px;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  .lead__title {
+    margin: 0 auto;
+    margin-bottom: 16px;
+    font-size: 40px;
+    line-height: 44px;
+    max-width: 288px;
+    min-height: 88px;
+  }
+
+  .lead__subtitle {
+    margin-bottom: 40px;
+    padding-bottom: 0;
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 288px;
+    min-height: 40px;
+  }
+
+  .lead__image {
+    margin: 0;
+    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 320px;
+    min-height: 200px;
+  }
+
+  .lead__caption {
+    padding-left: 16px;
+  }
+
+  .intro__container {
+    margin: 0 auto;
+    max-width: 288px;
+    padding-top: 64px;
+  }
+
+  .intro__title {
+    font-size: 32px;
+    line-height: 103%;
+    padding-right: 40px;
+  }
+
+  .intro__text {
+    padding-top: 40px;
+  }
+
+  .intro__list {
+    padding-top: 34px;
+  }
+
+  .photo-grid__container {
+    margin: 0 auto;
+    display: block;
+    padding-top: 64px;
+    max-width: 288px;
+  }
+
+  .cards {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 288px;
+    min-height: 216px;
+    gap: 0;
+  }
+
+  .cards__item {
+    list-style-type: none;
+    padding-left: 0;
+    padding-bottom: 12px;
+    max-width: 100%;
+    min-height: 100%;
+    line-height: 0;
+  }
+
+  .cards__item:last-child {
+    padding-bottom: 0;
+  }
+
+  .cards__image {
+    margin: 0;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .places__container {
+    margin: 0 auto;
+    padding-top: 14px;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 320px;
+  }
+
+  .place {
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .place__content {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .place__title {
+    margin: 0;
+    padding-top: 50px;
+    font-size: 32px;
+    line-height: 35px;
+    align-self: end;
+    padding-bottom: 32px;
+  }
+
+  .place__website {
+    margin: 0;
+    padding: 0;
+    padding-left: 16px;
+    padding-right: 19px;
+    align-self: flex-start;
+    color: #ffffff;
+    padding-bottom: 32px;
+  }
+
+  .place__url-heading {
+    margin: 0;
+    padding-bottom: 12px;
+    line-height: 12px;
+  }
+
+  .place__image {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 32px;
+  }
+
+  .place__paragraph {
+    padding-bottom: 25px;
+    padding-right: 3px;
+    font-size: 16px;
+  }
+
+  .place__paragraph:last-child {
+    padding-bottom: 0;
+  }
+
+  .cover {
+    margin: 0;
+  }
+
+  .cover__container {
+    margin: 0 auto;
+    padding-top: 66px;
+    padding-bottom: 64px;
+  }
+
+  .cover__background {
+    position: relative;
+    margin: 0;
+    max-width: 320px;
+    min-height: 200px;
+    margin: 0 auto;
+  }
+
+  .cover__background:hover .cover__overlay {
+    opacity: 0.5;
+  }
+
+  .cover__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  .cover__title {
+    margin: 0;
+    font-size: 32px;
+    line-height: 35px;
+    max-width: 288px;
+    min-height: 70px;
+  }
+
+  .cover__subtitle {
+    margin: 0;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 16px;
+    max-width: 288px;
+    min-height: 48px;
+    padding-top: 16px;
+  }
+
+  .footer__container {
+    display: flex;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 24px;
+    padding-left: 16px;
+    max-width: 186px;
+    min-height: 320px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: space-between;
+  }
+
+  .footer__links {
+    margin: 0;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+  }
+
+  .footer__link {
+    margin: 0;
+    margin-bottom: 34px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .footer__link:hover {
+    transition: all 0.3s linear;
+    opacity: 0.5;
+  }
+
+  .footer__copyright {
+    margin: 0;
+  }
+
+  .footer__author {
+    margin: 0;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
