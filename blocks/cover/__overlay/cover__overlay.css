@@ -1,6 +1,5 @@
 .cover__overlay {
-  /*разобраться с transition: all 0.3s linear; скорее всего в rotation*/
-  position: absolute; /*++*/
+  position: absolute;
   margin: 0;
   width: 100%;
   height: 100%;

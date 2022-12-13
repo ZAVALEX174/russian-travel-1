@@ -1,5 +1,4 @@
 .place__link {
-  /*++*/
   margin: 0;
   padding: 0;
   font-family: "Inter";
@@ -11,7 +10,7 @@
   color: #ffffff;
 }
 
-.place__link:hover { 
+.place__link:hover {
   transition: all 0.3s linear;
   opacity: 0.5;
 }
